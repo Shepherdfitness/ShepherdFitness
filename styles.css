@@ -48,10 +48,11 @@ a{ color:inherit; text-decoration:none; }
 }
 
 .header-top img{
-  height:200px;
+  height:188px;
   width:auto;
   display:block;
 }
+
 
 /* NAV ROW */
 .header-bottom{
@@ -127,17 +128,17 @@ h1{
   height:42px;
 }
 
-/* ================= MOBILE ================= */
-
 @media (max-width:900px){
   .hero-grid{ grid-template-columns:1fr; }
   .nav{ display:none; }
 
   .header-top img{
-    height:140px;
+    height:160px;
+    width:auto;
   }
 
   .header-bottom{
     justify-content:center;
   }
 }
+

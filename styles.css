@@ -74,7 +74,7 @@ a:hover{ color:var(--brand); }
 }
 
 .site-header .logo img{
-  height:150px;
+  height:200px;
   width:auto;
   max-height:none;
   display:block;

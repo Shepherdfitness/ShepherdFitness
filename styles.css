@@ -293,3 +293,6 @@ input::placeholder, textarea::placeholder{ color: rgba(167,179,204,.7); }
   width: auto !important;
   max-height: none !important;
 }
+.site-header{
+  min-height: 120px;
+}

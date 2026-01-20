@@ -9,15 +9,9 @@
   --border:rgba(255,255,255,.10);
 }
 
-.logo img{
-  height: 100px;
-  width: auto;
-  display: block;
-
-}
-
 *{ box-sizing:border-box; }
 html,body{ margin:0; padding:0; }
+
 body{
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: radial-gradient(1200px 800px at 20% -10%, rgba(110,231,255,.18), transparent 60%),
@@ -42,22 +36,33 @@ a:hover{ color: var(--brand); }
   background: rgba(11,15,23,.75);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
+  min-height: 130px;
 }
 
 .header-content{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding: 14px 0;
   gap: 16px;
+  min-height: 130px;
+  padding: 0;
 }
 
 .logo{
   font-weight: 700;
   letter-spacing: .2px;
   font-size: 18px;
+  display:flex;
+  align-items:center;
 }
 .logo span{ color: var(--brand); }
+
+.site-header .logo img{
+  height: 110px;
+  width: auto;
+  display: block;
+  max-height: none;
+}
 
 .nav{
   display:flex;
@@ -287,12 +292,16 @@ input::placeholder, textarea::placeholder{ color: rgba(167,179,204,.7); }
   .contact-grid{ grid-template-columns: 1fr; }
   .nav{ display:none; }
   .hero-metrics{ grid-template-columns: 1fr; }
-}
-.site-header .logo img{
-  height: 100px !important;
-  width: auto !important;
-  max-height: none !important;
-}
-.site-header{
-  min-height: 120px;
+
+  .site-header{
+    min-height: 110px;
+  }
+
+  .header-content{
+    min-height: 110px;
+  }
+
+  .site-header .logo img{
+    height: 90px;
+  }
 }

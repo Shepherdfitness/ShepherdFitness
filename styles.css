@@ -288,3 +288,8 @@ input::placeholder, textarea::placeholder{ color: rgba(167,179,204,.7); }
   .nav{ display:none; }
   .hero-metrics{ grid-template-columns: 1fr; }
 }
+.site-header .logo img{
+  height: 100px !important;
+  width: auto !important;
+  max-height: none !important;
+}

@@ -14,6 +14,13 @@
   outline:none;
   border:none;
 }
+/* FOOTER LOGO — SMALL */
+.site-footer a.logo > img{
+  height:42px;
+  width:auto;
+  outline:none;
+  border:none;
+}
 
 
 /* RESET */

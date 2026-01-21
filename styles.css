@@ -153,4 +153,9 @@ h1{
   max-height:none !important;
   display:block !important;
 }
+/* FORCE FOOTER LOGO SMALL */
+.site-footer a.logo img{
+  height:42px !important;
+  width:auto !important;
+}
 

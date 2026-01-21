@@ -6,6 +6,15 @@
   --brand:#6ee7ff;
   --border:rgba(255,255,255,.10);
 }
+/* HEADER LOGO — ONLY */
+.site-header .header-top > a.logo > img{
+  height:260px;
+  width:auto;
+  display:block;
+  outline:none;
+  border:none;
+}
+
 
 /* RESET */
 *{ box-sizing:border-box; }

@@ -137,10 +137,11 @@ h1{
   .hero-grid{ grid-template-columns:1fr; }
   .nav{ display:none; }
 
-  .header-top img{
+  .site-header .header-top a.logo img{
     height:160px;
     width:auto;
   }
+
 
   .header-bottom{
     justify-content:center;

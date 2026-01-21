@@ -145,5 +145,12 @@ h1{
   .header-bottom{
     justify-content:center;
   }
+
+/* FORCE HEADER LOGO SIZE */
+.site-header .header-top a.logo img{
+  height:188px !important;
+  width:auto !important;
+  max-height:none !important;
+  display:block !important;
 }
 

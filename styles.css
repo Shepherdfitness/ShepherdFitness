@@ -23,6 +23,7 @@ body{
 }
 
 a{ color:inherit; text-decoration:none; }
+a:hover{ color:var(--brand); }
 
 .container{
   width:min(1120px, calc(100% - 40px));
@@ -35,7 +36,7 @@ a{ color:inherit; text-decoration:none; }
   position:sticky;
   top:0;
   z-index:100;
-  background:rgba(11,15,23,.9);
+  background:rgba(11,15,23,.92);
   backdrop-filter:blur(12px);
   border-bottom:1px solid var(--border);
 }
@@ -44,22 +45,22 @@ a{ color:inherit; text-decoration:none; }
 .header-top{
   display:flex;
   justify-content:center;
-  padding:40px 0 20px;
+  align-items:center;
+  padding:28px 0 14px;
 }
 
-/* If your PNG has padding, this makes it look bigger */
-.site-header .header-top .logo{
+/* HEADER LOGO ONLY */
+.site-header .header-top a.logo{
   display:inline-flex;
-  transform: scale(1.25);
-  transform-origin: center;
+  align-items:center;
+  justify-content:center;
 }
 
-/* Force header logo size */
 .site-header .header-top a.logo img{
-  height:300px !important;
+  height:260px !important;
   width:auto !important;
-  max-height:none !important;
   display:block !important;
+  max-height:none !important;
 }
 
 /* NAV ROW */
@@ -67,7 +68,7 @@ a{ color:inherit; text-decoration:none; }
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding-bottom:18px;
+  padding:0 0 18px;
 }
 
 .nav{
@@ -131,12 +132,11 @@ h1{
   color:var(--muted);
 }
 
-/* Force footer logo small */
+/* FOOTER LOGO ONLY (SMALL) */
 .site-footer a.logo img{
   height:42px !important;
   width:auto !important;
   display:block !important;
-  transform:none !important;
 }
 
 /* ================= MOBILE ================= */
@@ -145,11 +145,9 @@ h1{
   .hero-grid{ grid-template-columns:1fr; }
   .nav{ display:none; }
 
-  .site-header .header-top a.logo img{
-    height:300px !important;
-  }
+  .header-bottom{ justify-content:center; }
 
-  .header-bottom{
-    justify-content:center;
+  .site-header .header-top a.logo img{
+    height:190px !important;
   }
 }
